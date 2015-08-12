@@ -136,3 +136,21 @@ body {
     margin-top: 0px;
   }
 }
+
+@-webkit-keyframes fader {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-up {
+  0% {
+    margin-top: 1000px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
