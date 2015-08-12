@@ -86,6 +86,7 @@ body {
   padding: 0;
   border: 1px solid $accent;
   animation: slide-up 2s 1;
+  -webkit-animation: slide-up 2s 1;
   img {
     max-height: 610px;
   }
@@ -105,10 +106,16 @@ body {
   animation-delay: 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  -webkit-animation-name: fader;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
   h1 {
     font-family: $main-font;
     color: white;
-    border-bottom: 1px solid rgba(66,66,66, 0.8);  
+    border-bottom: 1px solid rgba(66,66,66, 0.8);
   }
 }
 
