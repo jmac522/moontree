@@ -104,7 +104,7 @@ body {
   animation-timing-function: ease-in;
   animation-delay: 2s;
   animation-iteration-count: 1;
-  animation-fill-mode: forward;
+  animation-fill-mode: forwards;
   h1 {
     font-family: $main-font;
     color: white;
