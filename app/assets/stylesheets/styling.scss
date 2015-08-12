@@ -1,0 +1,104 @@
+$top-bar: rgb(33,33,33);
+$background: rgba(196,185,161, 0.1);
+$accent: rgb(191,229,212);
+$main-font: 'Raleway', sans-serif;
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+.main-container {
+  padding-top: 124px;
+  max-width: 78.5rem;
+}
+.nav-links {
+  padding: 17px 27px;
+  float: right;
+  p {
+    font-family: $main-font;
+    padding: 0px 16px;
+    color: white;
+    display: inline;
+    margin: 17px 0px;
+  }
+}
+
+.link:hover p {
+  border-radius: 3px;
+  background-color: $top-bar !important;
+  border: 1px solid $accent;
+  color: $accent !important;
+}
+
+
+body {
+  background-color: black;
+}
+
+.logo-text {
+  display: inline;
+
+}
+.text-img {
+  img {
+    height: 48px;
+    margin-left: 14px;
+    margin-top: 8px;
+  }
+}
+.logo-moon {
+  position: fixed;
+  margin-top: 15px;
+  height: 100px;
+  width: 100px;
+  border-radius: 72px;
+  background-color: $top-bar;
+  border-bottom: 52px solid rgb(191,229,212);
+}
+
+.moontree-top-bar {
+  display: inline;
+  height: 65px;
+  z-index: 10;
+  position: fixed;
+  right: 0;
+  left: 0;
+  background-color: $top-bar;
+  border-bottom: 2px solid $accent;
+  margin: auto;
+    h2 {
+      padding-top: 5px;
+    }
+}
+
+.home-1 {
+  background-color: $background;
+  padding: 0;
+  border: 1px solid $accent;
+  img {
+    max-height: 610px;
+  }
+}
+
+.content-pic {
+  padding: 0;
+}
+
+.content-text {
+  color: white;
+  font-family: $main-font;
+  h1 {
+    font-family: $main-font;
+    color: white;
+  }
+}

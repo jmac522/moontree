@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MoontreeMaster</title>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div class="moontree-top-bar clearfix">
+    <span class="logo-text">
+      <span class="text-img"><%= image_tag('logo_text.png') %></span>
+    </span>
+    <span class="logo-moon">
+      <%= image_tag('logo_moon.png') %>
+    </span>
+    <span class="nav-links">
+      <span class="link">
+        <p>Contact</p>
+      </span>
+      <span class="link">
+        <p>Artists</p>
+      </span>
+    </span>
+  </div>
+
+
+  <%- flash.each do |key, value| -%>
+    <div class="flash flash-<%= key %>">
+      <%= value %>
+    </div>
+  <%- end -%>
+  <div class="main-container row">
+    <%= yield %>
+  </div>
+  <%= javascript_include_tag 'application' %>
+  <%= yield :extra_footer %>
+</body>
+</html>
