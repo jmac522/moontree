@@ -85,7 +85,6 @@ body {
   background-color: $background;
   padding: 0;
   border: 1px solid $accent;
-  animation: fader 5s 1;
   animation: slide-up 2s 1;
   img {
     max-height: 610px;
@@ -99,6 +98,13 @@ body {
 .content-text {
   color: white;
   font-family: $main-font;
+  opacity: 0;
+  animation-name: fader;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forward;
   h1 {
     font-family: $main-font;
     color: white;
