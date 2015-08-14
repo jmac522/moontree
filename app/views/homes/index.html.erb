@@ -15,3 +15,8 @@
     </div>
   </div>
 </div>
+<div class="small-12 columns insta-container">
+  <% @instagram.each do |instagram| %>
+    <%= image_tag instagram.images.standard_resolution.url %>
+  <% end %>
+</div>
